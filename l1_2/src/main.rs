@@ -17,7 +17,7 @@ fn main() {
 
     for &number in &numbers {
         // Создаём новый поток для каждого числа
-        let handle = thread::spawn(move || {
+        let handle = thread::spawn(move || { //с помощью move заставляем замыкание забирать во владение используемые значения
             let square = number * number; // Вычисление квадрата
             square // Возвращаем результат
         });
