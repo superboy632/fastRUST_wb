@@ -1,5 +1,11 @@
 fn main() {
+    println!("Введите число");
     let mut input = String::new();
+    std::io::stdin().read_line(&mut input).expect("can't read line");
+    let number:i64 = input.trim().parse().expect("Incorrect number");
+
+    let mut input = String::new();
+    println!("Введите на сколько бит сдвинуть");
     std::io::stdin().read_line(&mut input).expect("can't read line");
     let n:i32 = input.trim().parse().expect("Incorrect number");
 
@@ -8,10 +14,6 @@ fn main() {
         eprintln!("Недопустимый диапазон занчений");
         std::process::exit(1);
     }
-
-    let mut input = String::new();
-    std::io::stdin().read_line(&mut input).expect("can't read line");
-    let number:i64 = input.trim().parse().expect("Incorrect number");
 
     // создаем мут переменную
     let mut a: i64 = number;
