@@ -1,16 +1,24 @@
 fn main() {
+    println!("Введите число");
     let mut input = String::new();
+    std::io::stdin().read_line(&mut input).expect("can't read line");
+    let number:i64 = input.trim().parse().expect("Incorrect number");
+
+    let mut input = String::new();
+    println!("Введите на сколько бит сдвинуть");
     std::io::stdin().read_line(&mut input).expect("can't read line");
     let n:i32 = input.trim().parse().expect("Incorrect number");
 
-    // обрабатываем введеное число на очень большое число и отрицательное
+    // обрабатываем введеное число на очень большое число и отрицательное, максимальное число 63, так как 64 бита
     if n > 63 || n < 0 {
         eprintln!("Недопустимый диапазон занчений");
         std::process::exit(1);
     }
 
-    let mut a: i64 = 1;
+    // создаем мут переменную
+    let mut a: i64 = number;
 
+    // делаем битовый сдвиг на n, каждый сдвиг на 1 бит это умножение на 2 числа
     a = a << n;
 
     println!("{}", a);
