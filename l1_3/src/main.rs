@@ -1,7 +1,6 @@
 use std::thread;
 use std::sync::mpsc;
 use std::time::Duration;
-
 fn main() {
     let mut input = String::new();
     std::io::stdin().read_line(&mut input).expect("can't read line");
