@@ -42,7 +42,4 @@ fn main() {
     for h in handles {
         h.join().unwrap();
     }
-    // child.join().unwrap();
-    // child1.join().unwrap();
-    // child2.join().unwrap();
 }
