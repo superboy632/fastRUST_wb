@@ -1,57 +1,62 @@
-use std::sync::{mpsc, Arc, Mutex};
-use std::time::Duration;
+use flume::{unbounded, Receiver};
+use tokio::time::{self, Duration};
 use tokio::signal;
-use tokio::signal::ctrl_c;
+
+
+async fn workers(number: usize, rx: Receiver<String>) {
+    loop {
+        tokio::select! {
+            message = rx.recv_async() => {
+                match message {
+                    Ok(data) => {
+                    println!("Worker{} received: {}", number, data); // вывожу сообщение и номер воркера
+                    },
+                    Err(_) => {
+                        // Если канал закрыт, выходим из цикла
+                        break;
+                    },
+                }
+            },
+            _ = signal::ctrl_c() => {
+                println!("Воркер {} завершает работу", number);
+                break;
+            },
+        }
+    }
+}
+
+async fn task(num_workers: usize) {
+    let (tx, rx) = unbounded();
+
+    for i in 0..num_workers {
+        let rx1 = rx.clone();
+        tokio::spawn(workers(i, rx1));
+    }
+
+    let mut count = 0;
+    loop {
+        let data = format!("Message {}", count);
+        tx.send(data).unwrap();
+        count += 1;
+        tokio::time::sleep(Duration::from_secs(1)).await; // Пауза на 1 секунду
+    }
+
+}
 
 #[tokio::main]
 async fn main() {
-    let (tx, rx) = mpsc::channel();
-    let rx = Arc::new(Mutex::new(rx)); //
-
     let mut num_workers = String::new();
     std::io::stdin().read_line(&mut num_workers).expect("can't read line");
     let n = num_workers.trim().parse().expect("Incorrect number");
 
-    if  n < 0 {
-        eprintln!("Недопустимый диапазон занчений");
-        std::process::exit(1);
-    }
-    let mut workers = vec![];
-    // Запускаем воркеры
-    for i in 0..n {
-        let rx1 = Arc::clone(&rx);
-        let handle = tokio::spawn(async move {
-            loop {
-                let rx = rx1.lock().unwrap().recv();
-                match rx {
-                    Ok(data) => {
-                        println!("Worker{} received: {}", i, data); // вывожу сообщение и номер воркера
-                    }
-                    Err(_) => {
-                        // Если канал закрыт, выходим из цикла
-                        break;
-                    }
-                }
-            }
-        });
-        workers.push(handle);
-    }
-    let ctrl_c_handle = tokio::spawn(async {
-        signal::ctrl_c().await.unwrap();
-        println!("ctrl_c detected");
+
+    tokio::spawn(async move {
+        task(n).await;
     });
-    // Главный поток будет постоянно писать данные в канал
-    let mut count = 0;
-    loop {
-        // tokio::select! {
-        //     _ = ctrl_c_handle => {
-        //         println!("Ctrl+c received");
-        //         break;
-        //     }
-        //     _ = tokio::time::sleep(Duration::from_secs(1)) => {
-        //         let data = format!("Message {}", count);
-        //         tx.send(data).unwrap();
-        //         count += 1;
-        //     }
-        }
+
+    // Ждем сигнал Ctrl+C
+    tokio::signal::ctrl_c().await.expect("Error while waiting for Ctrl+C");
+
+    time::sleep(Duration::from_secs(1)).await;
+
 }
