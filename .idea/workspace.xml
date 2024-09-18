@@ -22,17 +22,7 @@
     <cargoProject FILE="$PROJECT_DIR$/l1_6/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_09_2024_23_42_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_09_2024_23_42__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2024_10_18__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_09_2024_10_18__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_5/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/l1_5/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_5/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/l1_5/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_5/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_5/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_6/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/l1_6/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_6/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_6/src/main.rs" afterDir="false" />
-    </list>
+    <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,7 +211,7 @@
       <workItem from="1725901698077" duration="274000" />
       <workItem from="1725906125578" duration="359000" />
       <workItem from="1725911287649" duration="6550000" />
-      <workItem from="1726589221128" duration="7164000" />
+      <workItem from="1726589221128" duration="7647000" />
     </task>
     <servers />
   </component>
