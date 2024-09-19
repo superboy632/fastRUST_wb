@@ -20,9 +20,20 @@
     <cargoProject FILE="$PROJECT_DIR$/l1_5/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l1_4/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l1_6/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l1_11/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l1_21/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l1_22/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l1_23/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit" />
+    <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1_11/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_11/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1_20/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_20/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1_7/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/l1_7/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1_7/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/l1_7/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1_7/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_7/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +78,7 @@
   "keyToString": {
     "Cargo.Run l1_1.executor": "Run",
     "Cargo.Run l1_10.executor": "Run",
+    "Cargo.Run l1_11.executor": "Run",
     "Cargo.Run l1_13.executor": "Run",
     "Cargo.Run l1_14.executor": "Run",
     "Cargo.Run l1_15.executor": "Run",
@@ -74,9 +86,12 @@
     "Cargo.Run l1_17.executor": "Run",
     "Cargo.Run l1_18.executor": "Run",
     "Cargo.Run l1_19.executor": "Run",
+    "Cargo.Run l1_20.executor": "Run",
+    "Cargo.Run l1_22.executor": "Run",
     "Cargo.Run l1_3 [l1_3].executor": "Run",
     "Cargo.Run l1_5.executor": "Run",
     "Cargo.Run l1_6.executor": "Run",
+    "Cargo.Run l1_7.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
     "git-widget-placeholder": "main",
@@ -98,10 +113,10 @@
       <recent name="$PROJECT_DIR$/web_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run l1_6">
-    <configuration name="Run l1_17" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_17 --bin l1_17" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_17" />
+  <component name="RunManager" selected="Cargo.Run l1_24">
+    <configuration name="Run l1_11" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l1_11 --bin l1_11" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_11" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -116,9 +131,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_18" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_18 --bin l1_18" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_18" />
+    <configuration name="Run l1_20" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l1_20 --bin l1_20" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_20" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -133,9 +148,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_19" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_19 --bin l1_19" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_19" />
+    <configuration name="Run l1_22" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l1_22 --bin l1_22" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_22" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -150,9 +165,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_5" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_5 --bin l1_5" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_5" />
+    <configuration name="Run l1_23" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l1_23 --bin l1_23" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_23" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -167,9 +182,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_6" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_6 --bin l1_6" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_6" />
+    <configuration name="Run l1_24" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l1_24 --bin l1_24" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_24" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -186,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run l1_6" />
-        <item itemvalue="Cargo.Run l1_5" />
-        <item itemvalue="Cargo.Run l1_19" />
-        <item itemvalue="Cargo.Run l1_18" />
-        <item itemvalue="Cargo.Run l1_17" />
+        <item itemvalue="Cargo.Run l1_24" />
+        <item itemvalue="Cargo.Run l1_23" />
+        <item itemvalue="Cargo.Run l1_22" />
+        <item itemvalue="Cargo.Run l1_20" />
+        <item itemvalue="Cargo.Run l1_11" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +226,7 @@
       <workItem from="1725901698077" duration="274000" />
       <workItem from="1725906125578" duration="359000" />
       <workItem from="1725911287649" duration="6550000" />
-      <workItem from="1726589221128" duration="7647000" />
+      <workItem from="1726589221128" duration="12968000" />
     </task>
     <servers />
   </component>
