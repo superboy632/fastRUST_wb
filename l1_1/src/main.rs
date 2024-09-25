@@ -4,21 +4,21 @@ pub trait Action {
 }
 // создаем структуру Person
 pub struct Person {
-    pub NAME: String
+    pub name: String
 }
 /* реализуем типаж, после impl ставим имя трейта, который хотим реализовать и после ключевого слова for
  указываем имя типа, для которого хотим реализовать
 */
 impl Action for Person {
     fn say(&self) {
-        println!("Hello, {}", self.NAME);
+        println!("Hello, {}", self.name);
     }
 }
 
 
 fn main() {
     let person = Person {
-        NAME: String::from("Grigory"),
+        name: String::from("Grigory"),
     };
 
     person.say();

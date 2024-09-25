@@ -24,15 +24,27 @@
     <cargoProject FILE="$PROJECT_DIR$/l1_21/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l1_22/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l1_23/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l1_24/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l2_1/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l2_5/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-082dd85a00bee070.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-101991068c047811.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-8f8531ec55cda72c.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-c2533c0678cf8bc9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/tokio_macros-ad82f99493449070.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/tokio_macros-ad82f99493449070.dll.exp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/tokio_macros-ad82f99493449070.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024__14_09__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_11/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_11/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_20/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_20/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_7/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/l1_7/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_7/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/l1_7/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_7/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_7/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l1_1/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_1/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,12 +66,12 @@
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {}
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:superboy632/fastRUST_wb.git",
-    "accountId": "8ff127be-1478-4411-99e2-debe9bb6efe1"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:superboy632/fastRUST_wb.git&quot;,
+    &quot;accountId&quot;: &quot;8ff127be-1478-4411-99e2-debe9bb6efe1&quot;
   }
-}]]></component>
+}</component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="ev8fn4j6" />
   </component>
@@ -88,12 +100,19 @@
     "Cargo.Run l1_19.executor": "Run",
     "Cargo.Run l1_20.executor": "Run",
     "Cargo.Run l1_22.executor": "Run",
+    "Cargo.Run l1_23.executor": "Run",
+    "Cargo.Run l1_24.executor": "Run",
     "Cargo.Run l1_3 [l1_3].executor": "Run",
     "Cargo.Run l1_5.executor": "Run",
     "Cargo.Run l1_6.executor": "Run",
     "Cargo.Run l1_7.executor": "Run",
+    "Cargo.Run l2_5.executor": "Run",
+    "Cargo.Test lib::tests.executor": "Run",
+    "Cargo.Test tests::case_intensive.executor": "Run",
+    "Cargo.Test tests::one_result.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "Shell Script.Makeclean.sh.executor": "Run",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/grigri/RustroverProjects/fastRUST_wb",
     "node.js.detected.package.eslint": "true",
@@ -103,8 +122,9 @@
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
+    "org.rust.disableDetachedFileInspection/Users/grigri/RustroverProjects/fastRUST_wb/l2_5/src/lib.rs": "true",
     "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "language.rust",
+    "settings.editor.selected.configurable": "language.rust.cargo.check",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,10 +133,10 @@
       <recent name="$PROJECT_DIR$/web_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run l1_24">
-    <configuration name="Run l1_11" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_11 --bin l1_11" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_11" />
+  <component name="RunManager" selected="Cargo.Run l2_5">
+    <configuration name="Run l1_1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l1_1 --bin l1_1" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_1" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -131,9 +151,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_20" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_20 --bin l1_20" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_20" />
+    <configuration name="Run l2_5" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l2_5 --bin l2_5" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -148,9 +168,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_22" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_22 --bin l1_22" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_22" />
+    <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -165,9 +185,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_23" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_23 --bin l1_23" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_23" />
+    <configuration name="Test tests::case_intensive" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests::case_intensive -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -182,9 +202,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l1_24" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_24 --bin l1_24" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_24" />
+    <configuration name="Test tests::one_result" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests::one_result -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -201,11 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run l1_24" />
-        <item itemvalue="Cargo.Run l1_23" />
-        <item itemvalue="Cargo.Run l1_22" />
-        <item itemvalue="Cargo.Run l1_20" />
-        <item itemvalue="Cargo.Run l1_11" />
+        <item itemvalue="Cargo.Run l2_5" />
+        <item itemvalue="Cargo.Test tests::case_intensive" />
+        <item itemvalue="Cargo.Test tests::one_result" />
+        <item itemvalue="Cargo.Test lib::tests" />
+        <item itemvalue="Cargo.Run l1_1" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +246,8 @@
       <workItem from="1725901698077" duration="274000" />
       <workItem from="1725906125578" duration="359000" />
       <workItem from="1725911287649" duration="6550000" />
-      <workItem from="1726589221128" duration="12968000" />
+      <workItem from="1726589221128" duration="26524000" />
+      <workItem from="1727106650142" duration="22644000" />
     </task>
     <servers />
   </component>
