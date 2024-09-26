@@ -1,1 +1,0 @@
-C:\Users\Grigorii\RustroverProjects\fastRUST_wb\l2_5\target\debug\l2_5.exe: C:\Users\Grigorii\RustroverProjects\fastRUST_wb\l2_5\src\lib.rs C:\Users\Grigorii\RustroverProjects\fastRUST_wb\l2_5\src\main.rs
