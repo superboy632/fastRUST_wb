@@ -27,24 +27,14 @@
     <cargoProject FILE="$PROJECT_DIR$/l1_24/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l2_1/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l2_5/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l2_2/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l2_4/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-082dd85a00bee070.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-101991068c047811.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-8f8531ec55cda72c.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build-c2533c0678cf8bc9.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build1.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build2.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/build_script_build3.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/tokio_macros-ad82f99493449070.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/tokio_macros-ad82f99493449070.dll.exp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024,_14_09_[Changes]1/tokio_macros-ad82f99493449070.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_09_2024__14_09__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l1_1/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l1_1/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makeclean.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Makeclean.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/l2_1/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l2_1/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,9 +96,23 @@
     "Cargo.Run l1_5.executor": "Run",
     "Cargo.Run l1_6.executor": "Run",
     "Cargo.Run l1_7.executor": "Run",
+    "Cargo.Run l2_1.executor": "Run",
+    "Cargo.Run l2_2.executor": "Run",
+    "Cargo.Run l2_4.executor": "Run",
     "Cargo.Run l2_5.executor": "Run",
     "Cargo.Test lib::tests.executor": "Run",
+    "Cargo.Test main::tests (1).executor": "Run",
+    "Cargo.Test main::tests.executor": "Run",
+    "Cargo.Test tests::case_count.executor": "Run",
+    "Cargo.Test tests::case_default.executor": "Run",
+    "Cargo.Test tests::case_empty.executor": "Run",
+    "Cargo.Test tests::case_fixed.executor": "Run",
     "Cargo.Test tests::case_intensive.executor": "Run",
+    "Cargo.Test tests::case_main.executor": "Run",
+    "Cargo.Test tests::case_none_numbers.executor": "Run",
+    "Cargo.Test tests::case_standard.executor": "Run",
+    "Cargo.Test tests::case_wow.executor": "Run",
+    "Cargo.Test tests::case_wrong.executor": "Run",
     "Cargo.Test tests::one_result.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.rust.reset.selective.auto.import": "true",
@@ -133,10 +137,10 @@
       <recent name="$PROJECT_DIR$/web_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run l2_5">
-    <configuration name="Run l1_1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l1_1 --bin l1_1" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l1_1" />
+  <component name="RunManager" selected="Cargo.Test tests::case_count">
+    <configuration name="Run l2_1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l2_1 --bin l2_1" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_1" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -151,9 +155,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l2_5" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l2_5 --bin l2_5" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
+    <configuration name="Run l2_4" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l2_4 --bin l2_4" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_4" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -168,9 +172,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package l2_5 --lib tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
+    <configuration name="Test main::tests (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_1 --bin l2_1 tests" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_1" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -185,9 +189,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::case_intensive" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package l2_5 --lib tests::case_intensive -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
+    <configuration name="Test tests::case_count" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_1 --bin l2_1 tests::case_count -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_1" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -202,9 +206,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::one_result" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package l2_5 --lib tests::one_result -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
+    <configuration name="Test tests::case_main" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_4 --bin l2_4 tests::case_main -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_4" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -221,11 +225,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run l2_5" />
-        <item itemvalue="Cargo.Test tests::case_intensive" />
-        <item itemvalue="Cargo.Test tests::one_result" />
-        <item itemvalue="Cargo.Test lib::tests" />
-        <item itemvalue="Cargo.Run l1_1" />
+        <item itemvalue="Cargo.Test tests::case_count" />
+        <item itemvalue="Cargo.Test main::tests (1)" />
+        <item itemvalue="Cargo.Run l2_1" />
+        <item itemvalue="Cargo.Run l2_4" />
+        <item itemvalue="Cargo.Test tests::case_main" />
       </list>
     </recent_temporary>
   </component>
@@ -247,12 +251,25 @@
       <workItem from="1725906125578" duration="359000" />
       <workItem from="1725911287649" duration="6550000" />
       <workItem from="1726589221128" duration="26524000" />
-      <workItem from="1727106650142" duration="22644000" />
+      <workItem from="1727106650142" duration="33567000" />
+      <workItem from="1727422750472" duration="28241000" />
+      <workItem from="1727640484207" duration="6260000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
