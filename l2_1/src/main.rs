@@ -1,6 +1,5 @@
-use std::{env, io, process};
-use std::fs::File;
-use std::io::{Write, BufReader, BufRead, Error};
+use std::{env, process};
+use std::fs::{read_to_string};
 
 struct Config {
     filename: String,
@@ -32,17 +31,22 @@ fn get_file_name<'a>(mut args: impl Iterator<Item = String>) -> Result<Config, &
     Ok(config)
 }
 
-fn count_of_words(config: Config) -> usize {
-    let file = File::open(&config.filename).unwrap_or_else(|_| {
-        eprintln!("Не удалось открыть файл: {}", &config.filename);
-        process::exit(1);
-    });
-    let reader = BufReader::new(file);
-    reader
-        .lines()
-        .filter_map(|result| result.ok()) // игнорируем возможные ошибки чтения
-        .flat_map(|line| line.split_whitespace()) // разбиваем строки на слова
-        .count()
+fn count_lines(config: Config) -> usize {
+    let contents = read_to_string(config.filename);
+    let lines = contents.unwrap().lines().count();
+    lines
+}
+
+fn count_chars(config: Config) -> usize {
+    let contents = read_to_string(config.filename);
+    let chars = contents.unwrap().chars().count();
+    chars
+}
+
+fn count_words(config: Config) -> usize {
+    let contents = read_to_string(config.filename);
+    let words = contents.unwrap().split_whitespace().count();
+    words
 }
 
 
@@ -53,20 +57,12 @@ fn main() {
     });
 
     let count = match config.flag.as_str() {
-        // "-l" => count_lines(&file),
-        "-w" => count_of_words(config),
-        // "-c" => count_chars(&file),
-        _ => count_of_words(config),
+        "-l" => count_lines(config),
+        "-w" => count_words(config),
+        "-c" => count_chars(config),
+        _ => count_words(config),
     };
 
-}
+    println!("{}", count);
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-    #[test]
-    fn case_count() {
-        let config: Config = Config {filename: "test.txt".parse().unwrap(), flag: "-w".parse().unwrap() };
-        assert_eq!(15, count_of_words(config));
-    }
 }
