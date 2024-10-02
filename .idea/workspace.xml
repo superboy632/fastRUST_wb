@@ -29,12 +29,11 @@
     <cargoProject FILE="$PROJECT_DIR$/l2_5/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l2_2/Cargo.toml" />
     <cargoProject FILE="$PROJECT_DIR$/l2_4/Cargo.toml" />
+    <cargoProject FILE="$PROJECT_DIR$/l2_3/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f0dfc3f-0e87-481b-b367-11982e28f526" name="Changes" comment="Initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Makeclean.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Makeclean.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/l2_1/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/l2_1/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,16 +97,21 @@
     "Cargo.Run l1_7.executor": "Run",
     "Cargo.Run l2_1.executor": "Run",
     "Cargo.Run l2_2.executor": "Run",
+    "Cargo.Run l2_3.executor": "Run",
     "Cargo.Run l2_4.executor": "Run",
     "Cargo.Run l2_5.executor": "Run",
     "Cargo.Test lib::tests.executor": "Run",
     "Cargo.Test main::tests (1).executor": "Run",
     "Cargo.Test main::tests.executor": "Run",
+    "Cargo.Test tests::case_after.executor": "Run",
+    "Cargo.Test tests::case_before.executor": "Run",
+    "Cargo.Test tests::case_count (1).executor": "Run",
     "Cargo.Test tests::case_count.executor": "Run",
     "Cargo.Test tests::case_default.executor": "Run",
     "Cargo.Test tests::case_empty.executor": "Run",
     "Cargo.Test tests::case_fixed.executor": "Run",
     "Cargo.Test tests::case_intensive.executor": "Run",
+    "Cargo.Test tests::case_kill.executor": "Run",
     "Cargo.Test tests::case_main.executor": "Run",
     "Cargo.Test tests::case_none_numbers.executor": "Run",
     "Cargo.Test tests::case_standard.executor": "Run",
@@ -128,7 +132,7 @@
     "org.rust.cargo.project.model.impl.CargoExternalSystemProjectAware.subscribe.first.balloon": "",
     "org.rust.disableDetachedFileInspection/Users/grigri/RustroverProjects/fastRUST_wb/l2_5/src/lib.rs": "true",
     "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "language.rust.cargo.check",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -137,10 +141,10 @@
       <recent name="$PROJECT_DIR$/web_app" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::case_count">
-    <configuration name="Run l2_1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l2_1 --bin l2_1" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_1" />
+  <component name="RunManager" selected="Cargo.Run l2_3">
+    <configuration name="Run l2_3" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package l2_3 --bin l2_3" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_3" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -155,9 +159,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run l2_4" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package l2_4 --bin l2_4" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_4" />
+    <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -172,9 +176,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test main::tests (1)" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package l2_1 --bin l2_1 tests" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_1" />
+    <configuration name="Test tests::case_after" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests::case_after -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -189,9 +193,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::case_count" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package l2_1 --bin l2_1 tests::case_count -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_1" />
+    <configuration name="Test tests::case_before" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests::case_before -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -206,9 +210,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::case_main" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package l2_4 --bin l2_4 tests::case_main -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_4" />
+    <configuration name="Test tests::case_kill" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package l2_5 --lib tests::case_kill -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/l2_5" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -225,11 +229,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test tests::case_count" />
-        <item itemvalue="Cargo.Test main::tests (1)" />
-        <item itemvalue="Cargo.Run l2_1" />
-        <item itemvalue="Cargo.Run l2_4" />
-        <item itemvalue="Cargo.Test tests::case_main" />
+        <item itemvalue="Cargo.Run l2_3" />
+        <item itemvalue="Cargo.Test lib::tests" />
+        <item itemvalue="Cargo.Test tests::case_before" />
+        <item itemvalue="Cargo.Test tests::case_after" />
+        <item itemvalue="Cargo.Test tests::case_kill" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +257,7 @@
       <workItem from="1726589221128" duration="26524000" />
       <workItem from="1727106650142" duration="33567000" />
       <workItem from="1727422750472" duration="28241000" />
-      <workItem from="1727640484207" duration="6260000" />
+      <workItem from="1727640484207" duration="24915000" />
     </task>
     <servers />
   </component>
