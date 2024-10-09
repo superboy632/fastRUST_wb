@@ -6,5 +6,5 @@ edition = "2021"
 [dependencies]
 serde = { version = "1.0.210", features = ["derive"] }
 axum = "0.7.4"
-tokio = "1.40.0"
+tokio = { version = "1.40.0", features = ["full"] }
 dotenvy = "0.15.7"

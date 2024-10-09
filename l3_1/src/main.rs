@@ -48,8 +48,8 @@ impl App {
         Self { address, port }
     }
 
-    async fn run(&self) -> Result<(), Err> {
-        let router = create_main_router(state);
+    async fn run(&self) -> Result<(), Box<dyn std::error::Error>> {
+        let router = create_main_router();
         let listener = tokio::net::TcpListener::bind((self.address, self.port)).await?;
 
         axum::serve(listener, router).await?;
@@ -60,10 +60,12 @@ impl App {
 #[tokio::main]
 async fn main() {
     dotenvy::dotenv().ok();
+
     let port: u16 = std::env::var("PORT")
         .expect("PORT environment variable not set")
         .parse::<u16>()
         .expect("PORT environment variable is not a number");
+
     let app = App::new(port).await;
 
     app.run().await.expect("Error running server");
