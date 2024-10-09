@@ -1,0 +1,10 @@
+[package]
+name = "l3_1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0.210", features = ["derive"] }
+axum = "0.7.4"
+tokio = "1.40.0"
+dotenvy = "0.15.7"
